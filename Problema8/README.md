@@ -3,9 +3,12 @@
 
 ## Descripción
 
-Crear una página en donde se muestre un campo de texto que permita buscar en el
-siguiente API: https://pokeapi.co/, por el número o nombre del pokémon y muestre en
-pantalla los siguientes datos: Nombre, número, tipo, peso, altura y una imágen.
+Colocar un campo que reciba un número, luego dado ese número mostrarás esa cantidad en imágenes debajo del campo organizadas de forma acorde al tamaño de la pantalla.
+
+Ten en cuenta las siguientes consideraciones:
+- Las imágenes que se mostrarán pueden ser las que quiera y pueden estar en local o usando algún servicio.
+- El máximo número de imágenes es 15.
+- El tamaño y proporción de las imágenes queda a tu consideración.
 
 ## Despliegue
 
