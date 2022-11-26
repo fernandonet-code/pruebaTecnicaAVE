@@ -22,6 +22,7 @@ Dentro de los archivos descargados se encuentra el archivo `index.js` el cual co
 
 ![Screenshot1](https://github.com/fernandonet-code/PruebaTecnicaAVE/blob/main/Problema8/Screenshots/1.png)
 ![Screenshot2](https://github.com/fernandonet-code/PruebaTecnicaAVE/blob/main/Problema8/Screenshots/2.png)
+![Screenshot3](https://github.com/fernandonet-code/PruebaTecnicaAVE/blob/main/Problema8/Screenshots/3.png)
 
 
 ## Autor
