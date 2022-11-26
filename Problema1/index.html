@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="card text-center">
+            <div class="card-header">
+                <h2>Problema 1</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Multiplicación sin operador *.</h5>
+                <p class="card-text">Se debe crear una solución que dado 2 números X y Y cualesquiera, se obtenga la
+                    multiplicación de los mismos SIN usar el operador de multiplicación *. </p>
+
+                <div class="card m-auto" style="width: 18rem;">
+                    <div class="card-body">
+                        <form onsubmit="return false">
+                            <input type="number" class="form-control my-3" id="numX" placeholder="Ingrese número X">
+                            <input type="number" class="form-control my-3" id="numY" placeholder="Ingrese número Y">
+                            <input type="submit" value="Multiplicar" id="multiplicar" class="btn btn-primary m-2">
+                        </form>
+                    </div>
+                </div>
+                <div class="alert alert-success my-3" role="alert">
+                    <h1 id="resultado"></h1>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted">
+                Creado por: Fernando Alexis Alvarez Ruiz
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

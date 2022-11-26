@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid text-center" id="root">
+        <div class="row">
+            <div class="col">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Problema 4</h2>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Porcentajes con array</h5>
+                        <p class="card-text">
+                            Dado un arreglo de números (cualquiera) sacar la siguiente información:
+                            1. Cantidad de elementos del arreglo.
+                            2. Porcentaje de números pares e impares.
+                            3. Porcentaje de números mayores a 1000.
+                            4. Cuál es el mayor y menor valor.
+                            5. Asuma los siguientes indicadores: Tome en cuenta que el mayor
+                            número representa el 100%, indique cual es el porcentaje del número mínimo y el porcentaje del promedio de todos los números
+                        </p>
+                        <form onsubmit="return false">
+                            <input type="text" class="form-control m-auto w-25" id="array"
+                                placeholder="Ingrese 1,2,3,4,..." required>
+                            <input type="submit" value="Calcular" id="calcular" class="btn btn-primary m-2">
+                        </form>
+                        <div id="resultado"></div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Creado por: Fernando Alexis Alvarez Ruiz
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

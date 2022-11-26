@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid text-center" id="root">
+        <div class="row">
+            <div class="col">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Problema 2</h2>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Consumo de PokeAPI</h5>
+                        <p class="card-text">
+                            Dado un arreglo de números (cualquiera) sacar la siguiente información:
+                            1. Suma total de pokemones por tipo, debe recibir el tipo en string.
+                            2. Dado 2 tipos de pokémon retornar todos los pokemones que cumplen con esos 2 tipos.
+                            3. Dado el nombre de un pokémon retornar el número del mismo.
+                            4. Dado el número de un pokémon retornar un objeto con sus 6 stats base.
+                            5. Realizar una función que reciba un arreglo de números (Ids de pokémon) y un ordenador y
+                            retorne los pokémon en un arreglo con su nombre, tipo y peso ordenados según se indique por
+                            la función por uno de estos 3 indicadores.
+                            6. Recibir un número y un tipo (de pokémon) y retornar un true o false si el pokémon de ese
+                            número posee este tipo.
+                        </p>
+
+                        <ul class="list-group m-auto">
+                            <li class="list-group-item">
+                                <form onsubmit="return false">
+                                    <input type="text" class="form-control d-inline m-auto w-25" id="tipo"
+                                        placeholder="Tipo de pokémon (ex. electric)" required>
+                                    <input type="submit" value="Buscar" id="buscar1"
+                                        class="btn btn-primary d-inline m-2">
+                                </form>
+                                <div id="resultado1"></div>
+                            </li>
+                            <li class="list-group-item">
+                                <form onsubmit="return false">
+                                    <input type="text" class="form-control d-inline m-auto w-50" id="tipo1-tipo2"
+                                        placeholder="Dos tipos de pokémon (ex. electric, flying)" required>
+                                    <input type="submit" value="Buscar" id="buscar2"
+                                        class="btn btn-primary d-inline m-2">
+                                </form>
+                                <div id="resultado2"></div>
+                            </li>
+                            <li class="list-group-item">
+                                <form onsubmit="return false">
+                                    <input type="text" class="form-control d-inline m-auto w-25" id="nombre"
+                                        placeholder="Nombre de pokémon (ex. pikachu)" required>
+                                    <input type="submit" value="Buscar" id="buscar3"
+                                        class="btn btn-primary d-inline m-2">
+                                </form>
+                                <div id="resultado3"></div>
+                            </li>
+                            <li class="list-group-item">
+                                <form onsubmit="return false">
+                                    <input type="text" class="form-control d-inline m-auto w-25" id="numero"
+                                        placeholder="Numero de pokémon (ex. 1)" required>
+                                    <input type="submit" value="Buscar" id="buscar4"
+                                        class="btn btn-primary d-inline m-2">
+                                </form>
+                                <div id="resultado4"></div>
+                            </li>
+                            <li class="list-group-item">
+                                <form onsubmit="return false">
+                                    <input type="text" class="form-control d-inline m-auto w-25" id="arregloIds"
+                                        placeholder="Números de pokémon (ex. 1, 2)" required>
+
+                                    <select class="form-select d-inline m-2 w-25" id="ordenador">
+                                        <option selected>Ordenador</option>
+                                        <option value="nombre">Nombre</option>
+                                        <option value="peso">Peso</option>
+                                    </select>
+
+                                    <input type="submit" value="Buscar" id="buscar5"
+                                        class="btn btn-primary d-inline m-2">
+                                </form>
+                                <div id="resultado5"></div>
+                            </li>
+                            <li class="list-group-item">
+                                <form onsubmit="return false">
+                                    <input type="text" class="form-control d-inline m-auto w-25" id="numeroPokemon"
+                                        placeholder="Numero de pokémon (ex. 25)" required>
+                                    <input type="text" class="form-control d-inline m-auto w-25" id="tipoPokemon"
+                                        placeholder="Tipo de pokémon (ex. electric)" required>
+                                    <input type="submit" value="Buscar" id="buscar6"
+                                        class="btn btn-primary d-inline m-2">
+                                </form>
+                                <div id="resultado6"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Creado por: Fernando Alexis Alvarez Ruiz
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
