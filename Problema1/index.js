@@ -24,6 +24,11 @@ let multiplicar = document.getElementById("multiplicar");
 
 campoIntX.focus();
 
+// --------------------------------------------------------------------------------------------
+/**
+ * La función principal obtiene los valores de los campos de entrada, llama a la función de
+ * multiplicación y muestra el resultado en el campo de resultados.
+ */
 function main() {
 
     let intX = Number(campoIntX.value);
