@@ -15,6 +15,11 @@ https://pokeapi.co/ y retorne lo siguiente:
 */
 
 // --------------------------------------------------------------------------------------------
+/**
+ * Devuelve una promesa que se resuelve en la cantidad de pokémon de un tipo dado.
+ * @param tipo - El tipo de pokémon que quieres contar.
+ * @returns El número de pokémon de un determinado tipo.
+ */
 function totalPokemonTipo(tipo) {
     return new Promise(async function (resolve, reject) {
         try {
@@ -32,6 +37,12 @@ function totalPokemonTipo(tipo) {
 }
 // --------------------------------------------------------------------------------------------
 
+/**
+ * Toma dos tipos de pokémon y devuelve un arreglo de pokemones que tienen ambos tipos.
+ * @param tipo1 - El primer tipo de pokémon.
+ * @param tipo2 - El segundo tipo de pokémon.
+ * @returns Un arreglo de pokemones.
+ */
 function totalPokemonTipos(tipo1, tipo2) {
     return new Promise(async function (resolve, reject) {
         try {
@@ -64,6 +75,11 @@ function totalPokemonTipos(tipo1, tipo2) {
 }
 // --------------------------------------------------------------------------------------------
 
+/**
+ * Devuelve el id del pokémon con el nombre pasado como argumento.
+ * @param nombre - El nombre del pokémon del que quieres obtener el id.
+ * @returns El id del pokémon.
+ */
 function obtenerIdPokemon(nombre) {
     return new Promise(async function (resolve, reject) {
         try {
@@ -81,6 +97,12 @@ function obtenerIdPokemon(nombre) {
 }
 // --------------------------------------------------------------------------------------------
 
+/**
+ * Toma una identificación, realiza una solicitud a PokeAPI y devuelve una promesa que se resuelve en
+ * un objeto que contiene las estadísticas del pokémon con la identificación dada.
+ * @param id - El id del pokémon del que quieres obtener las estadísticas.
+ * @returns Objeto con las estadisticas del pokémon.
+ */
 function obtenerStatsPokemon(id) {
     return new Promise(async function (resolve, reject) {
         try {
@@ -105,6 +127,12 @@ function obtenerStatsPokemon(id) {
 }
 // --------------------------------------------------------------------------------------------
 
+/**
+ * Toma un arreglo de identificadores de pokémon y un parámetro de orden, y devuelve un arreglo de objetos * de pokemon ordenados por el parámetro de orden.
+ * @param ids - Arreglo de ids de pokemones.
+ * @param ordenador - Parametro de orden.
+ * @returns Una arreglo de objetos con nombre, tipo y peso del pokémon. 
+ */
 function ordenarPokemones([...ids], ordenador) {
     return new Promise(async function (resolve, reject) {
         try {
@@ -150,6 +178,13 @@ function ordenarPokemones([...ids], ordenador) {
 }
 // --------------------------------------------------------------------------------------------
 
+/**
+ * Toma un número identificador de pokémon y un tipo, y devuelve verdadero si el pokémon con la
+ * identificación dada tiene el tipo dado, y falso en caso contrario.
+ * @param id - El id del pokémon que quieres comprobar.
+ * @param tipo - El tipo de pokemon que quieres buscar.
+ * @returns Verdadero o falso.
+ */
 function confirmarTipoPokemon(id, tipo) {
     return new Promise(async function (resolve, reject) {
         try {
